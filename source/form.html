@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+  </head>
+  <body>
+
+		<main class="main">
+			<header class="header">
+				<img class="header__logo logo" src="" alt="Логотип">
+				<button class="menu-button"></button>
+			</header>
+			<section class="intro">
+				<h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+				<img class="intro__image--second" src="" alt="Welcome to the gorgeous Sedona">
+			</section>
+			<section class="text-block">
+				<h2 class="text-block__title">Оставьте свой отзыв</h2>
+				<p class="text-block__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+			</section>
+			<form class="form" action="#" method="post">
+				<h2 class="visually-hidden">Форма отправки отзыва</h2>
+				<section class="form__block">
+					<h3 class="form__block-title">Представьтесь:</h3>
+					<label class="form__text-label" for="name">Имя:</label>
+					<input class="form__text-input" type="text" name="name" id="name" placeholder="Имя">
+					<label class="form__text-label" for="second-name">Фамилия:</label>
+					<input class="form__text-input" type="text" name="second-name" id="second-name" placeholder="Фамилия">
+					<label class="form__text-label" for="middle-name">Отчество:</label>
+					<input class="form__text-input" type="text" name="middle-name" id="middle-name" placeholder="Отчество">
+				</section>
+				<section class="form__block">
+					<h3 class="form__block-title">Контактная информация:</h3>
+					<label class="form__text-label" for="tel">Контактный телефон:</label>
+					<input class="form__text-input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
+					<label class="form__text-label" for="email">Электронная почта:</label>
+					<input class="form__text-input" type="email" name="email" id="email" placeholder="Введите e-mail">
+				</section>
+				<section class="form__block">
+					<h3 class="form__block-title">ВАше Общее впечатление:</h3>
+					<input class="form__radio-input" type="radio" name="impression" value="good" id="good-radio" checked>
+					<label class="form__radio-label" for="good-radio">Скорее положительное</label>
+					<input class="form__radio-input" type="radio" name="impression" value="bad" id="bad-radio">
+					<label class="form__radio-label" for="bad-radio">Скорее отрицательное</label>
+					<input class="form__radio-input" type="radio" name="impression" value="neutral" id="neutral-radio">
+					<label class="form__radio-label" for="neutral-radio">Затрудняюсь ответить</label>
+				</section>
+				<section class="form__block">
+					<h3 class="form__block-title">посещенные достопримечательности:</h3>
+					<input class="form__checkbox-input" type="checkbox" name="place-bridge" id="place-bridge" checked>
+					<label class="form__checkbox-label" for="place-bridge">Мост Дьявола</label>
+					<input class="form__checkbox-input" type="checkbox" name="place-mountain" id="place-mountain" checked>
+					<label class="form__checkbox-label" for="place-mountain">Гора-Колокол</label>
+					<input class="form__checkbox-input" type="checkbox" name="place-park" id="place-park" checked>
+					<label class="form__checkbox-label" for="place-park">Слайд-парк</label>
+					<input class="form__checkbox-input" type="checkbox" name="place-rocks" id="place-rocks">
+					<label class="form__checkbox-label" for="place-rocks">Красные скалы</label>
+				</section>
+				<section class="form__block">
+					<h3 class="form__block-title">Опишите свои эмоции:</h3>
+					<textarea name="emotions" id="emotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
+				</section>
+				<button class="button form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+				<span class="form__button-subtext">* — обязательные поля</span>
+			</form>
+		</main>
+		<footer class="footer">
+			<h2 class="visually-hidden">Контакты</h2>
+			<a class="footer__link" href="#">#visitSEDONA</a>
+			<ul class="footer__social social">
+				<li><a class="social__link" href="#"><span class="visually-hidden">VK</span></a></li>
+				<li><a class="social__link" href="#"><span class="visually-hidden">Telegram</span></a></li>
+				<li><a class="social__link" href="#"><span class="visually-hidden">YouTube</span></a></li>
+			</ul>
+			<a class="footer__link--image" href="#">
+				<img class="footer__image" src="#" alt="Разработано в HTML Academy">
+			</a>
+		</footer>
+  </body>
+</html>
