@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+  </head>
+  <body>
+
+		<main class="main">
+			<header class="header">
+				<img class="header__logo logo" src="#" alt="Логотип">
+				<button class="menu-button"></button>
+
+				<nav class="header__navigation navigation">
+					<button class="navigation__close"></button>
+					<ul class="navigation__list">
+						<li><a href="#" class="navigation__item">Главная</a></li>
+						<li><a href="#" class="navigation__item">Фото и Видео</a></li>
+						<li><a href="#" class="navigation__item navigation__item--current">Форма отзыва</a></li>
+						<li><a href="#" class="navigation__item">HTML Academy</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="intro">
+				<h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+				<img class="intro__image intro__image--second" src="#" alt="Welcome to the gorgeous Sedona">
+			</section>
+			<section class="text-block">
+				<h2 class="text-block__title">Оставьте свой отзыв</h2>
+				<p class="text-block__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+			</section>
+			<form class="form" action="#" method="post">
+				<h2 class="visually-hidden">Форма отправки отзыва</h2>
+				<fieldset class="form__block">
+					<legend class="form__block-legend">Представьтесь:</legend>
+					<label class="form__label-block label">
+						<span class="label__text">Имя:</span>
+						<input class="label__input" type="text" name="name" id="name" placeholder="Имя">
+					</label>
+					<label class="form__label-block label">
+						<span class="label__text">Фамилия:</span>
+						<input class="label__input" type="text" name="second-name" id="second-name" placeholder="Фамилия">
+					</label>
+					<label class="form__label-block label">
+						<span class="label__text">Отчество:</span>
+						<input class="label__input" type="text" name="middle-name" id="middle-name" placeholder="Отчество">
+					</label>
+				</fieldset>
+				<fieldset class="form__block">
+					<legend class="form__block-legend">Контактная информация:</legend>
+					<label class="form__label-block label">
+						<span class="label__text">Контактный телефон:</span>
+						<input class="label__input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
+					</label>
+					<label class="form__label-block label">
+						<span class="label__text">Электронная почта:</span>
+						<input class="label__input" type="email" name="email" id="email" placeholder="Введите e-mail">
+					</label>
+				</fieldset>
+				<fieldset class="form__block">
+					<legend class="form__block-legend">ВАше Общее впечатление:</legend>
+					<label class="form__label-block label">
+						<input class="label__radio" type="radio" name="impression" value="good" id="good-radio" checked>
+						<span class="label__text">Скорее положительное</span>
+					</label>
+					<label class="form__label-block label">
+						<input class="label__radio" type="radio" name="impression" value="bad" id="bad-radio">
+						<span class="label__text">Скорее отрицательное</span>
+					</label>
+					<label class="form__label-block label">
+						<input class="label__radio" type="radio" name="impression" value="neutral" id="neutral-radio">
+						<span class="label__text">Затрудняюсь ответить</span>
+					</label>
+				</fieldset>
+				<fieldset class="form__block">
+					<legend class="form__block-legend">посещенные достопримечательности:</legend>
+					<label class="form__label-block label">
+						<input class="label__checkbox" type="checkbox" name="place-bridge" checked>
+						<span class="label__text">Мост Дьявола</span>
+					</label>
+					<label class="form__label-block label">
+						<input class="label__checkbox" type="checkbox" name="place-mountain" checked>
+						<span class="label__text">Гора-Колокол</span>
+					</label>
+					<label class="form__label-block label">
+						<input class="label__checkbox" type="checkbox" name="place-park" checked>
+						<span class="label__text">Слайд-парк</span>
+					</label>
+					<label class="form__label-block label">
+						<input class="label__checkbox" type="checkbox" name="place-rocks">
+						<span class="label__text">Красные скалы</span>
+					</label>
+				</fieldset>
+				<fieldset class="form__block">
+					<legend class="form__block-legend">Опишите свои эмоции:</legend>
+					<textarea name="emotions" id="emotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
+				</fieldset>
+				<div class="form__submit-wrapper">
+					<button class="form__submit button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+					<span class="form__submit-subtext">* — обязательные поля</span>
+				</div>
+			</form>
+		</main>
+		<footer class="footer">
+			<h2 class="visually-hidden">Контакты</h2>
+			<a class="footer__link" href="#">#visitSEDONA</a>
+			<ul class="footer__social social">
+				<li><a class="social__link" href="#"><span class="visually-hidden">VK</span></a></li>
+				<li><a class="social__link" href="#"><span class="visually-hidden">Telegram</span></a></li>
+				<li><a class="social__link" href="#"><span class="visually-hidden">YouTube</span></a></li>
+			</ul>
+			<a class="footer__link footer__link--image" href="#">
+				<img class="footer__image" src="#" alt="Разработано в HTML Academy">
+			</a>
+		</footer>
+		<div class="modal modal--error modal--closed">
+			<section class="text-block">
+				<h2 class="text-block__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+				<p class="text-block__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+				<button class="text-block__button button">OK</button>
+			</section>
+		</div>
+		<div class="modal modal--success modal--closed">
+			<section class="text-block">
+				<h2 class="text-block__title">Ваш отзыв отправлен!</h2>
+				<p class="text-block__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+				<button class="text-block__button button">Закрыть окно</button>
+			</section>
+		</div>
+  </body>
+</html>
