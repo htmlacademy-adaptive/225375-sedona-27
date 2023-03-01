@@ -23,7 +23,7 @@
 			</header>
 			<section class="intro">
 				<h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
-				<img class="intro__image--second" src="" alt="Welcome to the gorgeous Sedona">
+				<img class="intro__image intro__image--second" src="" alt="Welcome to the gorgeous Sedona">
 			</section>
 			<section class="text-block">
 				<h2 class="text-block__title">Оставьте свой отзыв</h2>
@@ -31,48 +31,74 @@
 			</section>
 			<form class="form" action="#" method="post">
 				<h2 class="visually-hidden">Форма отправки отзыва</h2>
-				<section class="form__block">
-					<h3 class="form__block-title">Представьтесь:</h3>
-					<label class="form__text-label" for="name">Имя:</label>
-					<input class="form__text-input" type="text" name="name" id="name" placeholder="Имя">
-					<label class="form__text-label" for="second-name">Фамилия:</label>
-					<input class="form__text-input" type="text" name="second-name" id="second-name" placeholder="Фамилия">
-					<label class="form__text-label" for="middle-name">Отчество:</label>
-					<input class="form__text-input" type="text" name="middle-name" id="middle-name" placeholder="Отчество">
-				</section>
-				<section class="form__block">
-					<h3 class="form__block-title">Контактная информация:</h3>
-					<label class="form__text-label" for="tel">Контактный телефон:</label>
-					<input class="form__text-input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
-					<label class="form__text-label" for="email">Электронная почта:</label>
-					<input class="form__text-input" type="email" name="email" id="email" placeholder="Введите e-mail">
-				</section>
-				<section class="form__block">
-					<h3 class="form__block-title">ВАше Общее впечатление:</h3>
-					<input class="form__radio-input" type="radio" name="impression" value="good" id="good-radio" checked>
-					<label class="form__radio-label" for="good-radio">Скорее положительное</label>
-					<input class="form__radio-input" type="radio" name="impression" value="bad" id="bad-radio">
-					<label class="form__radio-label" for="bad-radio">Скорее отрицательное</label>
-					<input class="form__radio-input" type="radio" name="impression" value="neutral" id="neutral-radio">
-					<label class="form__radio-label" for="neutral-radio">Затрудняюсь ответить</label>
-				</section>
-				<section class="form__block">
-					<h3 class="form__block-title">посещенные достопримечательности:</h3>
-					<input class="form__checkbox-input" type="checkbox" name="place-bridge" id="place-bridge" checked>
-					<label class="form__checkbox-label" for="place-bridge">Мост Дьявола</label>
-					<input class="form__checkbox-input" type="checkbox" name="place-mountain" id="place-mountain" checked>
-					<label class="form__checkbox-label" for="place-mountain">Гора-Колокол</label>
-					<input class="form__checkbox-input" type="checkbox" name="place-park" id="place-park" checked>
-					<label class="form__checkbox-label" for="place-park">Слайд-парк</label>
-					<input class="form__checkbox-input" type="checkbox" name="place-rocks" id="place-rocks">
-					<label class="form__checkbox-label" for="place-rocks">Красные скалы</label>
-				</section>
-				<section class="form__block">
-					<h3 class="form__block-title">Опишите свои эмоции:</h3>
+				<fieldset class="form__block">
+					<legend class="form__block-legend">Представьтесь:</legend>
+					<label class="form__label-block label">
+						<span class="label__text">Имя:</span>
+						<input class="label__input" type="text" name="name" id="name" placeholder="Имя">
+					</label>
+					<label class="form__label-block label">
+						<span class="label__text">Фамилия:</span>
+						<input class="label__input" type="text" name="second-name" id="second-name" placeholder="Фамилия">
+					</label>
+					<label class="form__label-block label">
+						<span class="label__text">Отчество:</span>
+						<input class="label__input" type="text" name="middle-name" id="middle-name" placeholder="Отчество">
+					</label>
+				</fieldset>
+				<fieldset class="form__block">
+					<legend class="form__block-legend">Контактная информация:</legend>
+					<label class="form__label-block label">
+						<span class="label__text">Контактный телефон:</span>
+						<input class="label__input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
+					</label>
+					<label class="form__label-block label">
+						<span class="label__text">Электронная почта:</span>
+						<input class="label__input" type="email" name="email" id="email" placeholder="Введите e-mail">
+					</label>
+				</fieldset>
+				<fieldset class="form__block">
+					<legend class="form__block-legend">ВАше Общее впечатление:</legend>
+					<label class="form__label-block label">
+						<input class="label__radio" type="radio" name="impression" value="good" id="good-radio" checked>
+						<span class="label__text">Скорее положительное</span>
+					</label>
+					<label class="form__label-block label">
+						<input class="label__radio" type="radio" name="impression" value="bad" id="bad-radio">
+						<span class="label__text">Скорее отрицательное</span>
+					</label>
+					<label class="form__label-block label">
+						<input class="label__radio" type="radio" name="impression" value="neutral" id="neutral-radio">
+						<span class="label__text">Затрудняюсь ответить</span>
+					</label>
+				</fieldset>
+				<fieldset class="form__block">
+					<legend class="form__block-legend">посещенные достопримечательности:</legend>
+					<label class="form__label-block label">
+						<input class="label__checkbox" type="checkbox" name="place-bridge" checked>
+						<span class="label__text">Мост Дьявола</span>
+					</label>
+					<label class="form__label-block label">
+						<input class="label__checkbox" type="checkbox" name="place-mountain" checked>
+						<span class="label__text">Гора-Колокол</span>
+					</label>
+					<label class="form__label-block label">
+						<input class="label__checkbox" type="checkbox" name="place-park" checked>
+						<span class="label__text">Слайд-парк</span>
+					</label>
+					<label class="form__label-block label">
+						<input class="label__checkbox" type="checkbox" name="place-rocks">
+						<span class="label__text">Красные скалы</span>
+					</label>
+				</fieldset>
+				<fieldset class="form__block">
+					<legend class="form__block-legend">Опишите свои эмоции:</legend>
 					<textarea name="emotions" id="emotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
-				</section>
-				<button class="button form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-				<span class="form__button-subtext">* — обязательные поля</span>
+				</fieldset>
+				<div class="form__submit-wrapper">
+					<button class="form__submit button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+					<span class="form__submit-subtext">* — обязательные поля</span>
+				</div>
 			</form>
 		</main>
 		<footer class="footer">
@@ -83,9 +109,23 @@
 				<li><a class="social__link" href="#"><span class="visually-hidden">Telegram</span></a></li>
 				<li><a class="social__link" href="#"><span class="visually-hidden">YouTube</span></a></li>
 			</ul>
-			<a class="footer__link--image" href="#">
+			<a class="footer__link footer__link--image" href="#">
 				<img class="footer__image" src="#" alt="Разработано в HTML Academy">
 			</a>
 		</footer>
+		<div class="modal modal--error modal--closed">
+			<section class="text-block">
+				<h2 class="text-block__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+				<p class="text-block__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+				<button class="text-block__button button">OK</button>
+			</section>
+		</div>
+		<div class="modal modal--success modal--closed">
+			<section class="text-block">
+				<h2 class="text-block__title">Ваш отзыв отправлен!</h2>
+				<p class="text-block__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+				<button class="text-block__button button">Закрыть окно</button>
+			</section>
+		</div>
   </body>
 </html>
